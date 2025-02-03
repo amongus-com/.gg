@@ -35,52 +35,21 @@ body {
     width: 300px;
 }
 
-.modal-content {
-    text-align: center;
+.gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.modal input {
-    display: block;
-    margin: 10px auto;
-    padding: 8px;
-    width: 80%;
+.trailer iframe {
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-.modal button {
-    background-color: #38bdf8;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.close {
-    float: right;
-    cursor: pointer;
-}
-
-.admin-panel {
+.admin-panel, .account-settings {
     background-color: #1e293b;
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
-    text-align: center;
     max-width: 400px;
 }
-
-.account-settings {
-    background-color: #1e293b;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-}
-
-.account-settings input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: none;
-    }
