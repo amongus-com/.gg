@@ -3,12 +3,10 @@ document.getElementById("darkModeToggle").addEventListener("click", function () 
 });
 
 const loginModal = document.getElementById("loginModal");
-const signupModal = document.getElementById("signupModal");
 const loginButton = document.getElementById("loginButton");
 const logoutButton = document.getElementById("logoutButton");
 const adminPanel = document.getElementById("adminPanel");
 const accountSettings = document.getElementById("accountSettings");
-const closeButtons = document.querySelectorAll(".close");
 
 const adminAccount = {
     username: "nottylerxd",
@@ -17,29 +15,6 @@ const adminAccount = {
 };
 
 loginButton.addEventListener("click", () => loginModal.style.display = "block");
-
-document.getElementById("showSignup").addEventListener("click", () => {
-    loginModal.style.display = "none";
-    signupModal.style.display = "block";
-});
-
-closeButtons.forEach(btn => btn.addEventListener("click", () => {
-    loginModal.style.display = "none";
-    signupModal.style.display = "none";
-}));
-
-document.getElementById("signupSubmit").addEventListener("click", () => {
-    const username = document.getElementById("signupUsername").value;
-    const password = document.getElementById("signupPassword").value;
-
-    if (username && password) {
-        localStorage.setItem(username, JSON.stringify({ username, password, role: "user" }));
-        alert("Account created!");
-        signupModal.style.display = "none";
-    } else {
-        alert("Enter username and password.");
-    }
-});
 
 document.getElementById("loginSubmit").addEventListener("click", () => {
     const username = document.getElementById("loginUsername").value;
