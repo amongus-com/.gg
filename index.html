@@ -9,62 +9,60 @@
 </head>
 <body>
     <header>
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/945360/ss_b7374128e5b786a302a716bca038d604b00ffe46.116x65.jpg?t=1731953093" 
-            alt="Among Us Banner" class="header-image">
-        <h1>Download Among Us for Windows</h1>
-        <p>Play the ultimate social deduction game with your friends!</p>
-        <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+        <h1>Download Among Us</h1>
+        <p>Play the ultimate social deduction game!</p>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
         <button id="loginButton">🔑 Login</button>
-        <button id="logoutButton" style="display: none;">🚪 Logout</button>
+        <button id="logoutButton" style="display: none;">🔓 Logout</button>
     </header>
 
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>User Login</h2>
+            <h2>Login</h2>
             <input type="text" id="loginUsername" placeholder="Username">
             <input type="password" id="loginPassword" placeholder="Password">
             <button id="loginSubmit">Login</button>
-            <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
-        </div>
-    </div>
-
-    <div id="signupModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Sign Up</h2>
-            <input type="text" id="signupUsername" placeholder="Username">
-            <input type="password" id="signupPassword" placeholder="Password">
-            <button id="signupSubmit">Sign Up</button>
         </div>
     </div>
 
     <div id="adminPanel" class="admin-panel" style="display: none;">
         <h2>Admin Panel</h2>
-        <p>Welcome, Admin! You have full access.</p>
+        <p>Welcome, Admin!</p>
         <button onclick="alert('Feature coming soon!')">Manage Users</button>
     </div>
 
     <div id="accountSettings" class="account-settings" style="display: none;">
         <h2>Account Settings</h2>
-        <label>New Username:</label>
-        <input type="text" id="newUsername" placeholder="Enter new username">
+        <input type="text" id="newUsername" placeholder="New Username">
         <button id="changeUsername">Change Username</button>
 
-        <label>New Password:</label>
-        <input type="password" id="newPassword" placeholder="Enter new password">
+        <input type="password" id="newPassword" placeholder="New Password">
         <button id="changePassword">Change Password</button>
     </div>
 
     <main>
         <section class="download">
-            <h2>Download Among Us</h2>
+            <h2>Download Now</h2>
             <a href="http://bluesus.ooguy.com/Among_Us.zip" class="download-button">Download for Windows</a>
+        </section>
+
+        <section class="gallery">
+            <h2>Game Screenshots</h2>
+            <img src="images/1.jpg" alt="Among Us Screenshot 1">
+            <img src="images/2.jpg" alt="Among Us Screenshot 2">
+            <img src="images/3.jpg" alt="Among Us Screenshot 3">
+            <img src="images/4.jpg" alt="Among Us Screenshot 4">
+        </section>
+
+        <section class="trailer">
+            <h2>Game Trailer</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8QSyEOICYSo" allowfullscreen></iframe>
         </section>
     </main>
 
     <footer>
-        <p>For support, contact: <a href="mailto:treatyinc0@gmail.com">treatyinc0@gmail.com</a></p>
+        <p>Support: <a href="mailto:treatyinc0@gmail.com">treatyinc0@gmail.com</a></p>
         <p>©2025 Loup Inc.</p>
     </footer>
 </body>
